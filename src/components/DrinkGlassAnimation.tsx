@@ -20,7 +20,7 @@ function DrinkGlassAnimation() {
   return (
     <div className="absolute inset-0 pointer-events-none overflow-hidden">
       {/* Two cocktail glasses positioned on the right side */}
-  <div className="absolute bottom-0 right-0 flex items-end justify-end -space-x-6 md:-space-x-12 pb-20 md:pb-16 lg:pb-24 pr-8 md:pr-16 lg:pr-24">
+      <div className="absolute bottom-0 right-0 flex items-end justify-end -space-x-6 md:-space-x-12 pb-20 md:pb-16 lg:pb-24 pr-8 md:pr-16 lg:pr-24">
         {/* Pink Martini Glass with Cherry */}
         <div
           className="relative"

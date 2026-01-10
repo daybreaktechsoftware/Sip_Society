@@ -1,4 +1,3 @@
-import { ArrowDown } from "lucide-react";
 import DrinkGlassAnimation from "./DrinkGlassAnimation";
 
 export default function Hero() {
@@ -68,9 +67,7 @@ export default function Hero() {
       <button
         onClick={scrollToProducts}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 text-rose-600 animate-bounce cursor-pointer hover:text-rose-700 transition-colors"
-      >
-        <ArrowDown className="w-8 h-8" />
-      </button>
+      ></button>
     </section>
   );
 }

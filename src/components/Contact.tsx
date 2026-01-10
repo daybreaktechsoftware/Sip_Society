@@ -102,9 +102,17 @@ export default function Contact() {
             <div className="p-8 bg-gradient-to-br from-rose-600 to-pink-700 rounded-2xl text-white shadow-xl hover:shadow-2xl transition-shadow">
               <h3 className="text-2xl font-bold mb-4">Join Our Community!</h3>
               <p className="text-rose-100 leading-relaxed mb-4">
-                Follow <a href="https://instagram.com/sipsociety_cpt" target="_blank" rel="noopener noreferrer" className="font-bold underline hover:opacity-80">@sipsociety_cpt</a> on Instagram and tag us—we run occasional
-                giveaways and promotions. Keep an eye on our feed for chances to
-                win.
+                Follow{" "}
+                <a
+                  href="https://instagram.com/sipsociety_cpt"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-bold underline hover:opacity-80"
+                >
+                  @sipsociety_cpt
+                </a>{" "}
+                on Instagram and tag us—we run occasional giveaways and
+                promotions. Keep an eye on our feed for chances to win.
               </p>
               <p className="text-rose-100 leading-relaxed">
                 Whether you're planning an event, have a special request, or
