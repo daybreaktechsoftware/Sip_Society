@@ -20,7 +20,7 @@ function DrinkGlassAnimation() {
   return (
     <div className="absolute inset-0 pointer-events-none overflow-hidden">
       {/* Two cocktail glasses positioned on the right side */}
-      <div className="absolute bottom-0 right-0 flex items-end justify-end -space-x-8 md:-space-x-12 pb-12 md:pb-16 pr-8 md:pr-16 lg:pr-24">
+  <div className="absolute bottom-0 right-0 flex items-end justify-end -space-x-6 md:-space-x-12 pb-20 md:pb-16 lg:pb-24 pr-8 md:pr-16 lg:pr-24">
         {/* Pink Martini Glass with Cherry */}
         <div
           className="relative"
@@ -33,7 +33,7 @@ function DrinkGlassAnimation() {
             <img
               src="/vecteezy_a-sleek-martini-glass-holds-a-pink-cocktail-garnished-with_55937898.png"
               alt="Pink Martini Cocktail"
-              className="w-[300px] sm:w-[280px] md:w-[320px] lg:w-[480px] h-auto select-none relative z-10"
+              className="w-[220px] sm:w-[260px] md:w-[320px] lg:w-[480px] h-auto select-none relative z-10"
               style={{
                 filter: "drop-shadow(0 25px 50px rgba(0,0,0,0.3))",
               }}
@@ -64,7 +64,7 @@ function DrinkGlassAnimation() {
             <img
               src="/vecteezy_cocktail-with_25063610.png"
               alt="Whiskey Cocktail"
-              className="w-[160px] sm:w-[200px] md:w-[240px] lg:w-[280px] h-auto select-none relative z-10"
+              className="w-[120px] sm:w-[180px] md:w-[240px] lg:w-[280px] h-auto select-none relative z-10"
               style={{
                 filter: "drop-shadow(0 25px 50px rgba(0,0,0,0.3))",
               }}

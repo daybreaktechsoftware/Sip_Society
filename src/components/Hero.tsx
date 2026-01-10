@@ -21,7 +21,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center lg:items-start">
           {/* Left side - Text content */}
           <div className="max-w-2xl mx-auto lg:mx-0 text-center lg:text-left">
-            <h1 className="text-6xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 sm:mb-8 md:mb-10 leading-[0.95] animate-fade-in">
+            <h1 className="text-5xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 sm:mb-8 md:mb-10 leading-[0.95] animate-fade-in">
               <span className="text-rose-900">Sip Pure</span>
               <span className="block text-rose-800 mt-0 sm:mt-1">
                 Refreshment
