@@ -51,8 +51,9 @@ export default function About() {
             <p>
               From social gatherings to special celebrations, Sip Society has
               become a cherished part of life's most refreshing moments. We're
-              proud to be a part of your story. Follow @sipsociety_cpt on
-              Instagram and join our R500 cash giveaway!
+              proud to be a part of your story. Follow <a href="https://instagram.com/sipsociety_cpt" target="_blank" rel="noopener noreferrer" className="font-bold underline hover:text-rose-600">@sipsociety_cpt</a> on
+              Instagram — we share occasional giveaways and special offers
+              there.
             </p>
           </div>
         </div>

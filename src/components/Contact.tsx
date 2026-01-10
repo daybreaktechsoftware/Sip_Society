@@ -10,14 +10,14 @@ export default function Contact() {
     {
       icon: <Phone className="w-6 h-6" />,
       label: "Phone",
-      value: "+27 (555) 123-4567",
-      link: "tel:+27555123456",
+      value: "+27 79 702 6206",
+      link: "tel:+27797026206",
     },
     {
       icon: <Mail className="w-6 h-6" />,
       label: "Email",
-      value: "hello@sipsociety.co.za",
-      link: "mailto:hello@sipsociety.co.za",
+      value: "Aashiqaisaacs@gmail.com",
+      link: "mailto:Aashiqaisaacs@gmail.com",
     },
     {
       icon: <MapPin className="w-6 h-6" />,
@@ -27,8 +27,8 @@ export default function Contact() {
     },
     {
       icon: <Clock className="w-6 h-6" />,
-      label: "Hours",
-      value: "Mon-Fri: 9AM-5PM",
+      label: "Days",
+      value: "Monday - Sunday",
       link: null,
     },
   ];
@@ -100,10 +100,11 @@ export default function Contact() {
             </div>
 
             <div className="p-8 bg-gradient-to-br from-rose-600 to-pink-700 rounded-2xl text-white shadow-xl hover:shadow-2xl transition-shadow">
-              <h3 className="text-2xl font-bold mb-4">Join Our Giveaway!</h3>
+              <h3 className="text-2xl font-bold mb-4">Join Our Community!</h3>
               <p className="text-rose-100 leading-relaxed mb-4">
-                Follow @sipsociety_cpt on Instagram, snap a pic with your drink,
-                and post to enter our R500 cash giveaway!
+                Follow <a href="https://instagram.com/sipsociety_cpt" target="_blank" rel="noopener noreferrer" className="font-bold underline hover:opacity-80">@sipsociety_cpt</a> on Instagram and tag us—we run occasional
+                giveaways and promotions. Keep an eye on our feed for chances to
+                win.
               </p>
               <p className="text-rose-100 leading-relaxed">
                 Whether you're planning an event, have a special request, or

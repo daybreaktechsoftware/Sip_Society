@@ -69,7 +69,7 @@ export default function Navigation() {
             }`}
           >
             <img
-              src="public/IMG_8811.jpg" // 👈 replace with your JPG path
+              src="/IMG_8811.jpg"
               alt="Sip Society Logo"
               className="w-full h-full object-cover"
             />

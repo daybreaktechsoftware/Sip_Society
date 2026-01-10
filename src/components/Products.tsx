@@ -272,8 +272,8 @@ export default function Products() {
         {/* Footer Note */}
         <div className="mt-16 text-center">
           <p className="text-lg text-rose-700 mb-6">
-            Available at select locations in Cape Town. Follow @sipsociety_cpt
-            on Instagram and enter our R500 cash giveaway!
+            Available at select locations in Cape Town. Follow <a href="https://instagram.com/sipsociety_cpt" target="_blank" rel="noopener noreferrer" className="font-bold underline hover:text-rose-600">@sipsociety_cpt</a>
+            on Instagram for occasional giveaways and special offers.
           </p>
         </div>
       </div>
