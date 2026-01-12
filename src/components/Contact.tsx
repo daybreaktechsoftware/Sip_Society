@@ -16,8 +16,8 @@ export default function Contact() {
     {
       icon: <Mail className="w-6 h-6" />,
       label: "Email",
-      value: "Aashiqaisaacs@gmail.com",
-      link: "mailto:Aashiqaisaacs@gmail.com",
+      value: "aybcreations@outlook.com",
+      link: "mailto:aybcreations@outlook.com",
     },
     {
       icon: <MapPin className="w-6 h-6" />,
