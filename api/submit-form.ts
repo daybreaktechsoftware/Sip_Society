@@ -17,14 +17,15 @@ const ratelimit = new Ratelimit({
 // Helper to verify reCAPTCHA v3 token
 async function verifyRecaptcha(token: string) {
   const secret = process.env.RECAPTCHA_SECRET;
-  if (!secret) return false;
+  // If no secret configured, skip verification (useful for local/dev)
+  if (!secret) return true;
   const res = await fetch(`https://www.google.com/recaptcha/api/siteverify`, {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: `secret=${encodeURIComponent(secret)}&response=${encodeURIComponent(token)}`,
   });
-  const data = await res.json();
-  return data.success && data.score && data.score >= 0.4;
+  const data: any = await res.json();
+  return !!(data && data.success && (data.score ?? 1) >= 0.4);
 }
 
 export default async function handler(req: any, res: any) {
