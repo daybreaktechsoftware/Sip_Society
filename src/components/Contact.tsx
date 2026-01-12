@@ -1,5 +1,5 @@
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import { useInView } from "../hooks/useScrollAnimation";
 
 export default function Contact() {
@@ -121,81 +121,22 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Contact Form (replaces Airtable embed) */}
+          {/* Airtable Form */}
           <div className="w-full">
-            <ContactForm />
+            <iframe
+              src="https://airtable.com/embed/appTALumHRx1ngJMr/pagdmGT394jOqNQ0K/form"
+              frameBorder="0"
+              width="100%"
+              height="733"
+              className="rounded-3xl"
+              style={{
+                background: "transparent",
+                border: "none",
+              }}
+            ></iframe>
           </div>
         </div>
       </div>
     </section>
-  );
-}
-
-function ContactForm() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [loading, setLoading] = useState(false);
-  const [sent, setSent] = useState(false);
-
-  async function handleSubmit(e: React.FormEvent) {
-    e.preventDefault();
-    if (loading) return;
-    setLoading(true);
-
-    // Optional reCAPTCHA token - site key should be loaded by page if configured
-    let token = "";
-    try {
-      // @ts-ignore
-      if (window.grecaptcha && process.env.VITE_RECAPTCHA_SITE_KEY) {
-        // @ts-ignore
-        token = await window.grecaptcha.execute(process.env.VITE_RECAPTCHA_SITE_KEY, { action: "submit" });
-      }
-    } catch (err) {
-      // ignore
-    }
-
-    try {
-      const res = await fetch("/api/submit-form", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, message, recaptchaToken: token }),
-      });
-      if (!res.ok) throw new Error("Failed to submit");
-      setSent(true);
-      setName("");
-      setEmail("");
-      setMessage("");
-
-      // disable for 10s to avoid rapid resubmits (client-side cooldown)
-      setTimeout(() => setSent(false), 10000);
-    } catch (err) {
-      console.error(err);
-      alert("Failed to send message. Please try again later.");
-    } finally {
-      setLoading(false);
-    }
-  }
-
-  return (
-    <form onSubmit={handleSubmit} className="space-y-4 bg-white p-6 rounded-2xl shadow">
-      <div>
-        <label className="text-sm font-medium text-rose-700">Name</label>
-        <input value={name} onChange={(e) => setName(e.target.value)} className="mt-1 w-full rounded-md border px-3 py-2" required />
-      </div>
-      <div>
-        <label className="text-sm font-medium text-rose-700">Email</label>
-        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} className="mt-1 w-full rounded-md border px-3 py-2" required />
-      </div>
-      <div>
-        <label className="text-sm font-medium text-rose-700">Message</label>
-        <textarea value={message} onChange={(e) => setMessage(e.target.value)} className="mt-1 w-full rounded-md border px-3 py-2 h-32" required />
-      </div>
-      <div>
-        <button disabled={loading || sent} className="w-full py-3 bg-rose-600 text-white rounded-full font-bold hover:opacity-90 disabled:opacity-50">
-          {loading ? "Sending..." : sent ? "Sent" : "Send Message"}
-        </button>
-      </div>
-    </form>
   );
 }
