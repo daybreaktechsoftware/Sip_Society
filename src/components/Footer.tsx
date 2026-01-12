@@ -47,7 +47,6 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <span className="text-4xl">�</span>
               <span
                 className="text-3xl font-bold uppercase"
                 style={{ fontFamily: "'Bungee', sans-serif" }}
@@ -70,7 +69,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-3 text-rose-200">
                 <Mail className="w-5 h-5 text-pink-400" />
-                <span>Aashiqaisaacs@gmail.com</span>
+                <span>aybcreations@outlook.com</span>
               </div>
             </div>
             <div className="flex gap-4">
@@ -162,6 +161,18 @@ export default function Footer() {
                 Cookie Policy
               </a>
             </div>
+          </div>
+
+          {/* Powered by DayBreak */}
+          <div className="mt-4 text-center">
+            <a
+              href="https://daybreaktechinnovations.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-4 py-2 bg-pink-400 text-rose-900 font-semibold rounded hover:bg-rose-200 hover:text-rose-900 transition-colors"
+            >
+              Powered by DayBreak Tech-Innovations
+            </a>
           </div>
         </div>
       </div>

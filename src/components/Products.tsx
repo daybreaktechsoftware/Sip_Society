@@ -280,7 +280,7 @@ export default function Products() {
               className="font-bold underline hover:text-rose-600"
             >
               @sipsociety_cpt
-            </a>
+            </a>{" "}
             on Instagram for occasional giveaways and special offers.
           </p>
         </div>
